@@ -1,0 +1,25 @@
+﻿<Window x:Class="codetest1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:codetest1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- First set of controls -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Label Content="Excel Path" VerticalAlignment="Center" />
+                <TextBox Name="txtFilePath" Width="200" Margin="10" Text="Enter the Excel File Path" />
+                <Button Name="btnCompare" Content="Compare" Width="100" Height="30" Click="btnCompare_Click" />
+            </StackPanel>
+            <!-- Second set of controls with spacing -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Label Content="Macro Name" VerticalAlignment="Center" />
+                <TextBox Name="txtMacroName" Width="200" Margin="10" Text="Enter Your Macro Name" />
+                <Button Name="ntnRunMacro" Content="Run" Width="100" Height="30" Click="btnRunMacro_Click" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
